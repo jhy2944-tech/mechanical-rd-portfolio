@@ -851,3 +851,29 @@ body::before{
   .career-line strong{font-size:15px}
   .career-info-row strong,.career-info-row a{font-size:14px}
 }
+
+
+/* ===== Fixture section updated with real CAD images ===== */
+.fixture-hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:18px;margin:24px 0 18px}
+.fixture-hero-main,.fixture-hero-side figure,.fixture-card{margin:0;border:1px solid rgba(28,37,49,.10);border-radius:22px;background:#fff;overflow:hidden;box-shadow:0 8px 24px rgba(24,32,41,.06)}
+.fixture-hero-main img,.fixture-hero-side img,.fixture-card img{display:block;width:100%;height:auto;background:#f5f6f8}
+.fixture-hero-main img{aspect-ratio:16/10;object-fit:cover}
+.fixture-hero-side{display:grid;grid-template-rows:1fr 1fr;gap:18px}
+.fixture-hero-side figure img{aspect-ratio:4/3;object-fit:cover}
+.fixture-hero-main figcaption,.fixture-hero-side figcaption,.fixture-card-media figcaption{padding:12px 14px;background:#f7f8fa;color:#626c77;font-size:12px;line-height:1.5}
+.fixture-hero-main figcaption strong,.fixture-hero-side figcaption strong{display:block;color:#1e2630;font-size:15px;margin-bottom:2px}
+.fixture-stage-grid{display:grid;grid-template-columns:1fr;gap:18px;margin-top:8px}
+.fixture-card{padding:22px}
+.fixture-card-copy span{display:block;color:#2c5f8a;font:700 10px 'Space Grotesk';letter-spacing:.12em;margin-bottom:8px}
+.fixture-card-copy h4{margin:0 0 10px;font-size:30px;line-height:1.25;color:#1e2630}
+.fixture-card-copy p{margin:0 0 10px;color:#5f6b76;font-size:15px;line-height:1.8}
+.fixture-card-copy small{display:block;color:#7d8792;font-size:12px;line-height:1.6}
+.fixture-card-media{display:grid;gap:12px;margin-top:16px}
+.fixture-card-media.two-up{grid-template-columns:1fr 1fr}
+.fixture-card-media.three-up{grid-template-columns:repeat(3,1fr)}
+.fixture-card-media.single-wide{grid-template-columns:1fr}
+.fixture-card-media figure{margin:0;border:1px solid rgba(28,37,49,.10);border-radius:16px;overflow:hidden;background:#fff}
+.fixture-card-media img{width:100%;height:220px;object-fit:contain;background:#f5f6f8}
+.fixture-card-media.single-wide img{height:320px;object-fit:cover}
+@media(max-width:980px){.fixture-hero-grid{grid-template-columns:1fr}.fixture-hero-side{grid-template-columns:1fr 1fr;grid-template-rows:none}.fixture-card-copy h4{font-size:26px}.fixture-card-media.three-up{grid-template-columns:1fr 1fr}.fixture-card-media.single-wide img{height:auto;object-fit:contain}}
+@media(max-width:640px){.fixture-hero-side,.fixture-card-media.two-up,.fixture-card-media.three-up{grid-template-columns:1fr}.fixture-card{padding:18px}.fixture-card-copy h4{font-size:23px}.fixture-card-media img{height:auto}.fixture-hero-main img,.fixture-hero-side figure img{aspect-ratio:auto;object-fit:contain}}
