@@ -1,22 +1,11 @@
-# 정효영 | 기계 R&D / CAE 포트폴리오 (원본 디자인 유지 개정판)
+# Structural Analysis & Mechanical R&D Portfolio
 
-개정: 2026-10-13. 기준: `취업지원_마스터정보_프로젝트소스.md` (2026-10-12) 및 사용자가 제공한 한국산학기술학회 2차 심사 결과(2026-09-16 게재가).
+Static GitHub Pages portfolio. Deploy from `main` branch root.
 
-## 적용 내용
-- 기존 `index.html`, `style.css`, `script.js`, `assets` 폴더를 유지한 채 직접 수정.
-- DCF 역설계 AI–FEM 변위 오차 ID-1 **9.29%** / ID-2 **2.74%** / ID-3 **2.13%** / ID-4 **3.49%** / ID-5 **1.93%** 정정. 네 건은 3.49% 이내.
-- 후속 DCF Fixture Ver.1–Ver.2 제작 이력과 미해결 체결 문제 추가. **실험 검증 완료 주장은 하지 않음**.
-- 충돌해석 실제 순서(3층 방탄판 → 헬멧 → 문헌 재현)와 최종 오류 수정의 근거인 Engineering Data 직교이방성 물성·파손 설정 반영.
-- SAFE-ONEQ 실제 기여, 별도 휴머노이드 로봇팔 제작, CAE 스터디 팀장 승계, 2026 YU 은상 추가.
-- L.O.B.O.T / NTIS 독립 활동 제거. ROS·미수행 해석 기술 목록 제외.
-- DCF 국제저널 **Under Review**, 터렛 국내저널 **Accepted 2026-09-16**, ICROS **공동저자**, 특허 **출원** 구분.
-- 기존 제작 사진이 없는 Fixture는 임의 사진 생성·삽입하지 않음.
+## Updated 2026-10-13
 
-## 배포
-GitHub Pages: HTML/CSS/JS와 assets 전체를 리포지토리 루트에 업로드. Pages main branch `/(root)`.
+- Added `assets/fixture_real_assembly.jpg`: physical 3D-printed DCF/fixture prototype photograph beside the CAD assembly image (desktop); stacked on mobile.
+- Updated the 2026.05.14 Future Automotive job lecture (3h) to confirmed attendance based on the user's clarification, no longer shown as unconfirmed.
+- Course list comprises 9 recorded education activities totaling 90 recorded hours. Attendance and course completion certificates remain distinct.
 
-## 주의사항
-- 최종 출판 권호/발행일은 확인되지 않아 Published로 표기하지 않았음.
-- 방탄판의 8.32 mm 등의 기존 비교 수치는 원본 웹사이트에 기재된 연구결과를 유지했으며 근거 문헌을 별도 확인해 최종 제출 전 재검토 권장.
-- Fixture·산학 프로젝트 실물 사진은 별도 추가할 수 있음.
-- 이는 로컬 수정본이며 실제 공개 GitHub Pages에 자동 배포되지 않음.
+The physical assembly photograph documents construction/assembly; it is not FEM surrogate experimental accuracy validation.
