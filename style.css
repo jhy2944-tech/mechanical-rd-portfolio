@@ -969,3 +969,171 @@ body::before{
   .fixture-overview-assembly img,.fixture-overview-pair img{height:auto;object-fit:contain}
   .fixture-card-copy h4{font-size:22px}
 }
+
+/* =======================================================================
+  COMPLETE READABILITY REPAIR · 2026-10-13
+  One accessible text hierarchy across the formerly dark-theme components.
+  Surface / type targets WCAG AA 4.5:1 for normal text.
+======================================================================= */
+:root{
+  --bg:#f3f4f6;
+  --card:#ffffff;
+  --line:rgba(32,43,56,.15);
+  --text:#1f2933;
+  --muted:#4c5a68;
+  --cyan:#245b86;
+  --violet:#526b85;
+  --shadow:0 8px 26px rgba(19,35,51,.07);
+}
+body{color:var(--text);background:#f3f4f6}
+.nav-wrap{background:rgba(255,255,255,.98)}
+.nav-links a{color:#4b5968}
+.nav-links a:hover{color:#1f2933}
+.hero-desc,.section-head>p:last-child{color:#4c5a68!important}
+.live-dot{color:#176541}
+.live-dot::before{background:#176541;box-shadow:none}
+.image-head,.project-index,.hero-credibility span,.hud-metrics span{color:#50606f}
+/* Intro & representative project cards */
+.about-profile,.readiness-grid article,.flagship-card,
+.research-proof,.paper-meta,.contribution-grid article,
+.evidence-visual,.result-panel,.research-origin,
+.output-card,.experience-grid article,.other-card,
+.proposal-experience,.recognition-grid article,.patent-card,
+.ballistic-video-hero,.ballistic-hero,.case-flow>div,
+.validation-report,.validation-wrap,.helmet-application,
+.beyond-simulation,.engineering-thesis,.paper-output,
+.abstract-box,.ballistic-calibration,.timeline div{
+  background:#fff;
+  border-color:rgba(32,43,56,.13);
+  color:#1f2933;
+}
+.about-profile .about-lead,.about-profile .about-lead strong,
+.about-profile>p{color:#344555!important}
+.readiness-grid h3,.flagship-copy h3,.contribution-grid h4,
+.paper-output h3,.engineering-thesis strong,.research-question h3{
+  color:#1f2933;
+}
+.readiness-grid p,.flagship-copy p,.contribution-grid p,
+.research-origin p,.experience-grid p,.other-card p,.output-card p{
+  color:#4c5a68!important;
+}
+.readiness-grid article>span,.flagship-copy>span,
+.paper-meta span,.paper-section-label>span,.result-panel>span,
+.research-origin span,.paper-output>span,.abstract-box>span,
+.engineering-thesis strong,.case-flow span,.case-flow b,
+.rne-patent-box span{color:#245b86}
+.flagship-copy b,.paper-subtitle,.cae-header>div>p:last-child,
+.paper-output p,.engineering-thesis p,.abstract-box p,
+.beyond-simulation p,.ballistic-video-meta b,
+.proposal-experience p strong{
+  color:#344555!important;
+}
+.paper-status,.cae-status{color:#245b86!important;border-color:#b7cad9;background:#edf3f8}
+.paper-meta span,.case-flow small,.evidence-visual small,.result-panel small,
+.workflow-figure figcaption,.output-card small,.other-card b,
+.patent-kicker,.patent-meta span,.patent-note p,
+.profile-facts small,.rne-patent-box small{
+  color:#50606f!important;
+}
+.paper-meta strong,.result-panel strong,.profile-facts strong,
+.patent-meta strong{color:#1f2933!important}
+.paper-meta span{font-size:11px}
+.paper-output,.engineering-thesis,.beyond-simulation{
+  background:#f9fbfd;
+  border:1px solid #d6e0e8;
+  border-radius:16px;
+}
+.paper-output p{font-size:16px;line-height:1.8}
+.engineering-thesis p{font-size:17px;line-height:1.75}
+.abstract-box{background:#fff;border-left:4px solid #245b86}
+.abstract-box p{line-height:1.85}
+.case-flow>div{background:#fff}
+.case-flow small{font-size:12px}
+.case-flow i{color:#526170}
+/* CAE technical report: remove the dark island */
+.cae-report{background:#fff;border-color:#d5dde5;backdrop-filter:none;box-shadow:var(--shadow)}
+.cae-report .report-label{color:#245b86}
+.cae-report th{color:#445565;font-size:12px}
+.cae-report td{color:#243443;font-size:13px}
+.cae-report .report-note strong{color:#1f2933}
+.cae-report .report-note p{color:#4c5a68!important;font-size:13px}
+.cae-visual-stack figcaption,.story-step figure figcaption,
+.calibration-images figcaption,.gallery-card figcaption,
+.compare-label{background:#f6f8fa;color:#4c5a68}
+.validation-metrics span{color:#4c5a68;font-size:12px}
+.validation-metrics .accent strong{color:#245b86}
+/* General tables/metrics: remove black cells and pale text */
+.table-scroll{background:#fff;border-color:#d7dfe7}
+.clean-table th{background:#f0f4f7;color:#25394b}
+.clean-table td{color:#344555;border-bottom:1px solid #e4eaf0}
+.clean-table tbody tr:hover{background:#f7f9fb}
+.note-card strong{color:#245b86}
+.note-card span{color:#344555}
+/* Relevant supporting text on white cards */
+.ballistic-video-meta b,.ballistic-summary strong,
+.ballistic-steps p,.ballistic-tags span,
+.proposal-experience p,.patent-desc,
+.patent-meta span,.patent-note p,
+.profile-facts small,.contact-links span,
+.rne-patent-box small,.rne-patent-box strong,
+.reproduction-metrics span,.reproduction-metrics strong,
+.ballistic-photo-card p,.ballistic-photo-card h4,
+.ballistic-video-copy p,.reproduction-metrics small{
+  color:#435362!important;
+}
+.ballistic-summary strong,.ballistic-photo-card h4,
+.reproduction-metrics strong,.rne-patent-box strong{color:#1f2933!important}
+.ballistic-steps p,.other-card p,.experience-grid p,.output-card p{font-size:13px;line-height:1.7}
+.ballistic-video-meta b{font-size:11px;background:#f4f7fa}
+.profile-facts>div,.patent-meta div{background:#fff;border-color:#d6dfe8}
+.patent-note{background:#f8fafc;border-left-color:#245b86}
+.patent-note p{font-size:13px}
+.patent-meta span{font-size:11px}
+.patent-badge,.patent-note span,.contact-card code{color:#245b86}
+.patent-card{box-shadow:var(--shadow)}
+/* More legible call-to-action + contact */
+.contact-card{background:#fff;border-color:#d7dfe7}
+.contact-links a{background:#f9fbfc;color:#245b86;border:1px solid #d0dbe5;font-size:15px}
+.contact-links a:hover{background:#edf3f8}
+.contact-links span{color:#4c5a68}
+.contact h2,.contact-card h2{color:#1f2933}
+.contact p{color:#4c5a68}
+.output-card a,.career-info-row a{color:#245b86}
+.patent-main h3{color:#1f2933}
+/* Navigation, small info and image captions */
+.paper-meta span,.flagship-copy>span,.experience-grid span,.other-card span,
+.output-card>span,.cae-visual-stack figcaption,.evidence-visual small,
+.case-flow small,.modal-metrics span,.output-card small,
+.fixture-card-copy span,.fixture-card-copy small,
+.fixture-hero-main figcaption,.fixture-overview-assembly figcaption,
+.fixture-overview-pair figcaption,.fixture-card-media figcaption{
+  font-size:12px;
+}
+/* Hero cards keep dark caption backgrounds deliberately */
+.hero-evidence-grid figcaption,.hero-evidence-grid figcaption b{color:#fff}
+.hero-evidence-grid figcaption span{color:#e4edf5;font-size:11px}
+.media-play{background:#1f2933;color:#fff}
+/* Detail dialogs */
+.modal-panel{background:#fff;color:#1f2933}
+.modal-panel h2,.modal-panel h3,.modal-panel strong{color:#1f2933}
+.modal-panel p,.modal-panel li,.modal-panel small{color:#344555!important}
+.modal-metrics>div{background:#f7f9fb;border-color:#d7dfe7}
+.modal-metrics span{color:#245b86}
+.modal-metrics strong{color:#1f2933}
+.modal-close{background:#f6f8fa;color:#1f2933}
+/* Reduce overly decorative/glassy appearance */
+.hero-image-card::after{display:none}
+.section-head h2{color:#1f2933}
+@media(max-width:760px){
+  .abstract-box{padding:22px}
+  .paper-output,.engineering-thesis{padding:20px}
+  .modal-panel{background:#fff}
+}
+/* Final small-print contrast pass */
+.research-proof span,.research-proof>div span,
+.career-person figcaption,.career-person figcaption span,
+.career-footnote,.footer,.footer a{
+  color:#4c5a68!important;
+}
+.career-footnote,.research-proof span{font-size:12px}
+.career-info-row strong small{color:#4c5a68!important;font-size:12px}
