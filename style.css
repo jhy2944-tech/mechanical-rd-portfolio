@@ -1137,3 +1137,84 @@ body{color:var(--text);background:#f3f4f6}
 }
 .career-footnote,.research-proof span{font-size:12px}
 .career-info-row strong small{color:#4c5a68!important;font-size:12px}
+
+
+/* ===== Complete education and training directory ===== */
+.career-training-link{display:inline-flex;gap:7px;align-items:center;margin-top:12px;font-size:13px;font-weight:700;color:#285979;text-decoration:none}
+.career-training-link:hover{text-decoration:underline}
+.training-directory{margin-top:28px;border:1px solid #d9dfe5;background:#fff;border-radius:18px;padding:30px;box-shadow:0 8px 24px rgba(24,32,41,.05)}
+.training-directory-head{display:flex;align-items:center;justify-content:space-between;gap:20px;border-bottom:1px solid #dfe4e9;padding-bottom:20px;margin-bottom:20px}
+.training-kicker{font:700 11px 'Space Grotesk',sans-serif;color:#2c5f8a;letter-spacing:.09em}
+.training-directory-head h3{font-size:28px;color:#1e2630;margin:8px 0 0;line-height:1.3}
+.training-summary{text-align:right;display:grid;gap:3px;color:#657380;font-size:12px}
+.training-summary strong{color:#1e2630;font-size:19px}
+.training-summary small{color:#52616e;font-size:12px}
+.training-groups{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.training-group{min-width:0;border:1px solid #dde3e8;border-radius:14px;background:#fbfcfd;overflow:hidden}
+.training-group-head{display:flex;gap:14px;align-items:center;padding:20px 20px 18px;background:#f5f7f9;border-bottom:1px solid #dee4e9}
+.training-group-index{font:700 13px 'Space Grotesk',sans-serif;color:#285979}
+.training-group-head h4{margin:0 0 4px;color:#1e2630;font-size:19px;line-height:1.35}
+.training-group-head p{margin:0;color:#596979;font-size:12px;line-height:1.65}
+.training-items{padding:4px 18px 8px}
+.training-item{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;padding:14px 0;border-bottom:1px solid #e3e8ec}
+.training-item:last-child{border-bottom:0}
+.training-item>div{display:grid;gap:5px}
+.training-item strong{color:#27333e;font-size:14px;font-weight:700;line-height:1.55}
+.training-item span{color:#647583;font-size:12px}
+.training-item>b{flex-shrink:0;font-size:12px;color:#244f72;background:#edf3f7;border-radius:999px;padding:5px 9px;white-space:nowrap}
+.training-pending{display:flex;justify-content:space-between;align-items:center;gap:26px;margin-top:18px;padding:18px 20px;border-radius:12px;background:#f7f8fa;border:1px dashed #c4cdd5}
+.training-pending>div{display:grid;gap:4px}
+.training-pending span{font:700 10px 'Space Grotesk',sans-serif;color:#596b7b;letter-spacing:.08em}
+.training-pending strong{font-size:15px;color:#263541}
+.training-pending small{font-size:12px;color:#627382}
+.training-pending p{font-size:12px;color:#586b7a!important;line-height:1.6;max-width:245px;margin:0}
+@media(max-width:900px){.training-groups{grid-template-columns:1fr}}
+@media(max-width:640px){.training-directory{padding:20px 15px}.training-directory-head,.training-pending{flex-direction:column;align-items:flex-start}.training-summary{text-align:left}.training-group-head{padding:18px 14px}.training-items{padding:0 14px 5px}.training-item strong{font-size:13px}.training-item>b{font-size:11px}}
+
+
+/* 2026-10-13: CAD assembly + photographed prototype side-by-side */
+.fixture-overview-top {
+  display: grid;
+  grid-template-columns: repeat(2,minmax(0,1fr));
+  gap: 18px;
+  align-items: stretch;
+}
+.fixture-overview-photo {
+  min-width: 0;
+  margin: 0;
+  overflow: hidden;
+  border-radius: 22px;
+  background: #fff;
+  border: 1px solid #dce2e8;
+  box-shadow: 0 8px 24px rgba(24,32,41,.06);
+}
+.fixture-overview-photo img,
+.fixture-overview-assembly img {
+  display: block;
+  width: 100%;
+  height: 328px;
+  object-fit: contain;
+  background: #f8fafc;
+}
+.fixture-overview-photo img { object-fit: cover; object-position:center; }
+.fixture-overview-photo figcaption {
+  padding: 14px 16px;
+  background:#f7f8fa;
+  color:#516170;
+  font-size:13px;
+  line-height:1.55;
+}
+.fixture-overview-photo figcaption strong {
+  display:block;
+  color:#1e2630;
+  font-size:16px;
+  margin-bottom:3px;
+}
+.fixture-overview-photo figcaption span {display:block}
+.fixture-overview-assembly figcaption span {display:block}
+@media(max-width:800px) {
+  .fixture-overview-top{grid-template-columns:1fr}
+  .fixture-overview-photo img,
+  .fixture-overview-assembly img {height:auto; aspect-ratio: 4/3; object-fit:contain}
+  .fixture-overview-photo img {object-fit:cover}
+}
